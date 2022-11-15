@@ -1,4 +1,4 @@
-from YouTubeSearch import YoutubeSearch
+from YouTubeSearch.youtube import YoutubeSearch
 
 
 # Search using keywords and on page 2
