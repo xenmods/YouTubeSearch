@@ -15,8 +15,8 @@ pip install git+https://github.com/xenmods/YouTubeSearch
 #### Search for only videos
 
 ```python
-from YouTubeSearch import YouTubeSearch
-search = YouTubeSearch()
+from YouTubeSearch.youtube import YoutubeSearch
+search = YoutubeSearch()
 videossearch = search.search('advanced python tutorial', type='video')
 print(videossearch)
 ```
@@ -137,8 +137,8 @@ print(videossearch)
 #### Search for only channels
 
 ```python
-from YouTubeSearch import YouTubeSearch
-search = YouTubeSearch()
+from YouTubeSearch.youtube import YoutubeSearch
+search = YoutubeSearch()
 videossearch = search.search('advanced python tutorial', type='channel')
 print(videossearch)
 ```
@@ -280,8 +280,8 @@ print(videossearch)
 #### Search for only playlists
 
 ```python
-from YouTubeSearch import YouTubeSearch
-search = YouTubeSearch()
+from YouTubeSearch.youtube import YoutubeSearch
+search = YoutubeSearch()
 videossearch = search.search('advanced python tutorial', type='playlist')
 print(videossearch)
 ```
@@ -405,8 +405,8 @@ print(videossearch)
 ### Get Video Information
 
 ```python
-from YouTubeSearch import YouTubeSearch
-search = YouTubeSearch()
+from YouTubeSearch.youtube import YoutubeSearch
+search = YoutubeSearch()
 videossearch = search.info('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 print(videossearch)
 ```
