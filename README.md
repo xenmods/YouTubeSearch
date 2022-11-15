@@ -7,7 +7,7 @@
 ## Installing
 
 ```bash
-pip install 
+pip install git+https://github.com/xenmods/YouTubeSearch
 ```
 
 ## Usage<br /><br />
