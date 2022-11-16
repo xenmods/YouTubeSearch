@@ -34,7 +34,7 @@ class YoutubeSearch():
             profilepics = ['https://vid.puffyan.us' + pfp['src'] for pfp in soup.select('img')]
             videos = [video.get_text() for video in soup.select('p+ p')]
             links = [link.a['href'] for link in soup.select('.pure-u-md-1-4 .h-box')]
-            output = [{'name': names[i], 'subscribers': subs[i], 'links': links[i],'profile': profilepics[i]} for i in range(len(names))]
+            output = [{'name': names[i], 'subscribers': subs[i], 'link': links[i],'profile': profilepics[i]} for i in range(len(names))]
             result = {'success': True, 'results': output}
         elif type == 'video':  
             # if video then get video information
